@@ -1,3 +1,4 @@
+// first option
 function nthFibo(index) {
   let now = 0;
   let before = null;
@@ -19,4 +20,17 @@ function nthFibo(index) {
   }
   return now;
 }
-nthFibo(4);
+console.log(nthFibo(4));
+
+// second option
+
+// const nthFibo2 = (n) => {  
+//   if ( n <= 0) {
+//     return n;
+//   }
+//   // if (n <= 1 ) {
+//   //   return n;
+//   // }
+//   return nthFibo2(n - 1) + nthFibo2(n - 2);
+// };
+// console.log(nthFibo2(4))
