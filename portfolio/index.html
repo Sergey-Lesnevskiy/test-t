@@ -26,18 +26,21 @@
         <div class="side-bar">
           <div class="side-bar__text">
             Социальные сети
-          </div >
+          </div>
           <ul class="side-bar__social-links">
-            <li><a href="https://ru-ru.facebook.com/"><img src="./assets/svg/Facebook.svg" alt="" class="side-bar__social-link social__link-facebook" ></a></li>
-            <li><a href="https://www.instagram.com/"><img src="./assets/svg/Instagram.svg" alt="" class="side-bar__social-link social__link-instagram" ></a></li>
-            <li><a href="https://github.com/"><img src="./assets/svg/Github.svg" alt="" class="side-bar__social-link social__link-github" ></a></li>
+            <li><a href="https://ru-ru.facebook.com/"><img src="./assets/svg/Facebook.svg" alt=""
+                  class="side-bar__social-link social__link-facebook"></a></li>
+            <li><a href="https://www.instagram.com/"><img src="./assets/svg/Instagram.svg" alt=""
+                  class="side-bar__social-link social__link-instagram"></a></li>
+            <li><a href="https://github.com/"><img src="./assets/svg/Github.svg" alt=""
+                  class="side-bar__social-link social__link-github"></a></li>
           </ul>
         </div>
 
       </aside>
       <div class="header__burger-menu">
         <div class="header__burger-menu-pic">
-      </div>
+        </div>
       </div>
       <nav class="header__menu">
         <div class="header__menu-cross"></div>
@@ -64,8 +67,118 @@
         </div>
       </div>
     </div>
-    
+
   </header>
+  <!--I haven't done add css yet -->
+  <main>
+    <section class="benefit">
+      <div class="benefit__container">
+        <p class="benefit__section-title">Опыт</p>
+        <h2 class="benefit__section-subtitle">Чем я буду полезна</h2>
+        <div class="benefit__container-grid">
+          <div class="benefit__container-education education">
+            <div class="education__title">Образование</div>
+            <ul class="education__list">
+              <li class="education__item item">
+                <div class="item__wrapper-content">
+                  <div class="item__wrapper-icon"><img src="" alt=""></div>
+                  <div class="item__wrapper-text">
+                    <b class="item__title">МГТУ им. Н. Э. Баумана</b>
+                    <p class="item__subtitle">Диплом магистра </p><span class="item__subtitle-place">| Москва
+                      (2014-2020)</span>
+                  </div>
+                  <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmo. </p>
+                </div>
+
+              </li>
+              <li class="education__item item">
+                <div class="item__wrapper-content">
+                  <div class="item__wrapper-icon"><img src="" alt=""></div>
+                  <div class="item__wrapper-text">
+                    <b class="item__title">Udemy</b>
+                    <p class="item__subtitle">Курсы по Web-разработке</p>
+                  </div>
+                  <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmo.</p>
+                </div>
+
+              </li>
+            </ul>
+          </div>
+          <div class="benefit__container-experience experience">
+            <div class="experience__title">experience</div>
+            <ul class="experience__list">
+              <li class="experience__item item">
+                <div class="item__wrapper-content">
+                  <div class="item__wrapper-icon"><img src="" alt=""></div>
+                  <div class="item__wrapper-text">
+                    <b class="item__title">Front-End Developer</b>
+                    <p class="item__subtitle">EPAM</p><span class="item__subtitle-place">| Москва (2018-2019)</span>
+                  </div>
+                  <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmo. </p>
+                </div>
+              </li>
+              <li class="experience__item item">
+                <div class="item__wrapper-content">
+                  <div class="item__wrapper-icon"><img src="" alt=""></div>
+                  <div class="item__wrapper-text">
+                    <b class="item__title">UI/UX Designer</b>
+                    <p class="item__subtitle">Squad Team </p><span class="item__subtitle-place">| Москва (2018) </span>
+                  </div>
+                  <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmo.</p>
+                </div>
+
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contacts" id="contacts">
+      <div class="contacts__container">
+        <div class="contacts__wrapper-img"><img src="" alt=""></div>
+        <div class="contacts__wrapper-content">
+          <p class="contacts__section-title">Контакты</p>
+          <h2 class="contacts__section-subtitle">Свяжитесь со мной</h2>
+          <p class="contacts__section-desc">Любым удобным для вас способом:</p>
+          <ul class="contacts__social-links">
+            <li><a href="https://ru-ru.facebook.com/"><img src="./assets/svg/Facebook.svg" alt=""
+                  class="side-bar__social-link social__link-facebook"></a></li>
+            <li><a href="https://www.instagram.com/"><img src="./assets/svg/Instagram.svg" alt=""
+                  class="side-bar__social-link social__link-instagram"></a></li>
+            <li><a href="https://github.com/"><img src="./assets/svg/Github.svg" alt=""
+                  class="side-bar__social-link social__link-github"></a></li>
+          </ul>
+          <p class="contacts__section-desc">Или оставьте ваши данные и я сама вам напишу:</p>
+          <form action="#" method="post" class="contacts__form">
+            <div class="input-wrap">
+              <input type="text" id="name" name="user_name" placeholder="Иван" required class="form__input">
+              <label for="name" class="form__label">Ваше имя</label>
+            </div>
+            <div class="input-wrap">
+              <input type="email" id="email" name="user_email" placeholder=" " required class="form__input">
+              <label for="email" class="form__label">Ваша почта</label>
+            </div>
+            <label for="textarea" class="textarea__label">Ваше сообщение</label>
+            <textarea id="textarea" name="textarea" cols="30" rows="10" required class="contacts__textarea form__label">
+              </textarea>
+              <button type="submit" class="button contacts__button">Отправить сообщение</button>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+
+  </main>
+
 </body>
 
 </html>
