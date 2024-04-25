@@ -3,6 +3,15 @@
   height: 600px;
 }
 
+.contacts__wrapper{
+  max-width: 1140px;
+  height:  781px;
+  margin: 0 auto;
+  border: 2px solid #000000;
+  border-top: none;
+  padding-top: 163px;
+}
+
 .contacts__container {
   position: relative;
   max-width: 1053px;
@@ -160,4 +169,7 @@ width: 219px;
   /* border-color: red; */
   color: red;
  width: 186px;
+}
+.field__checkbox{
+  display: none;
 }

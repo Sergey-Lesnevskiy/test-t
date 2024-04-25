@@ -14,7 +14,7 @@ const NAME_LABEL = document.querySelector(".name");
 const TEXT_SMS = document.querySelector("#textarea");
 const SMS_LABEL = document.querySelector(".form__label-textarea");
 
-//menu//
+//menu
 BTN_BURGER.addEventListener("click", addBurgerMenu);
 
 BTN_CROSS.addEventListener("click", removeBurgerMenu);
@@ -26,14 +26,16 @@ function addBurgerMenu() {
   SOCIAL_LINKS.classList.add("active__menu");
   OVERLAY_CONTENT.classList.add("active__menu");
   BODY.classList.add("lock");
+  disableScroll();
 }
 function removeBurgerMenu() {
   MENU.classList.remove("active__menu");
   SOCIAL_LINKS.classList.remove("active__menu");
   OVERLAY_CONTENT.classList.remove("active__menu");
   BODY.classList.remove("lock");
+  enableScroll();
 }
-//validation//
+//validation
 
 FORM_BUTTON.addEventListener("click", (e) => {
   e.preventDefault();
@@ -55,14 +57,16 @@ FORM_BUTTON.addEventListener("click", (e) => {
     })
       .then((response) => response.json())
       .then((data) => {
-        alert(`Вы отправили следующие данные:\n имя: ${data.name}\n email: ${data.email} \n cообщение: ${data.username}\n Я обязательно отвечу вам!`)});
+        alert(
+          `Вы отправили следующие данные:\n имя: ${data.name}\n email: ${data.email} \n cообщение: ${data.username}\n Я обязательно отвечу вам!`
+        );
+      });
   } else {
     alert(`Введите корректные данные`);
   }
   INPUT_MAIL.value = "";
   TEXT_SMS.value = "";
   INPUT_NAME.value = "";
-
 });
 INPUT_MAIL.addEventListener("focus", () => {
   INPUT_MAIL.classList.remove("red");
@@ -117,5 +121,18 @@ const handlerValidateEmail = (email) => {
   );
 };
 const handlerValidateName = (name) => {
-  return name.match(/[^a-zA-Z]\D+/g);
+  return name.match(/[^а-яА-Я]\D|[^a-zA-Z]\D+/g);
+};
+
+//scroll
+let paddingOffset = window.innerWidth - document.body.offsetWidth;
+
+let disableScroll = function () {
+  document.body.style.paddingRight = paddingOffset + "px";
+  BTN_BURGER.style.right = 28 + paddingOffset + "px";
+};
+
+let enableScroll = function () {
+  document.body.style.paddingRight = "0px";
+  BTN_BURGER.style.right = 28 + "px";
 };

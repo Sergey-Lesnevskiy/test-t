@@ -38,4 +38,4 @@ const nthFibo2 = (n) => {
 const fib = (n) => nthFibo2(n - 1)[0];
 
 
-console.log(fib(2));
+console.log(fib(4));

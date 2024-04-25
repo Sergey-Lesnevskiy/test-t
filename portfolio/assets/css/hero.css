@@ -4,7 +4,7 @@
   background-image: url('../jpg_png/Background.jpg');
   background-repeat: no-repeat;
   background-position: center center;
-  margin-bottom: 100px;
+  /* margin-bottom: 100px; */
 }
 
 .hero__container {
@@ -16,9 +16,10 @@
 
 .hero__content {
   max-width: 1140px;
-  height: 3000px;
+  height: 800px;
   margin: 0 auto;
   border: 2px solid #000000;
+  border-bottom: none;
   padding-top: 206px;
 }
 
