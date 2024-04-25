@@ -1,6 +1,9 @@
 @import 'normalize.css';
 @import 'myReset.css';
 @import 'variables.css';
-@import 'header.css';
+@import 'menu.css';
+@import 'hero.css';
+@import 'benefit.css';
+@import 'contacts.css';
 
 @import 'media.css';

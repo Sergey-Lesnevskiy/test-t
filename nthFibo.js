@@ -1,4 +1,4 @@
-// first option
+// first simple
 function nthFibo(index) {
   let now = 0;
   let before = null;
@@ -21,7 +21,7 @@ function nthFibo(index) {
 
 console.log(nthFibo(4));
 
-// second option
+// second recursion
 
 const nthFibo2 = (n) => {
   if(n < 0){
@@ -35,6 +35,7 @@ const nthFibo2 = (n) => {
   }
 };
 const fib = (n) => nthFibo2(n - 1)[0];
+
 
 
 console.log(fib(2));

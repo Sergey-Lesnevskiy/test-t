@@ -1,36 +1,167 @@
 @media (max-width: 1300px) {
-  .header__content {
+  .hero__content {
     max-width: 800px;
   }
 
-  .header__content-desc {
+  .hero__desc {
     font-size: 26px;
     line-height: 39px;
     width: 300px;
     margin-bottom: 32px;
     letter-spacing: 1.3px;
   }
-}
-@media (max-width: 956px){
 
-  .header__content {
-    max-width: 400px;
-        border: none;
+  .benefit {
+    height: 1039px;
+  }
+
+  .benefit__grid {
+    flex-direction: column;
+  }
+
+  .experience {
+    padding: 0;
+  }
+
+  .experience::before {
+    left: -44px;
+  }
+
+  .contacts__container {
+    flex-direction: column;
+    align-items: center;
   }
 }
-@media (max-width: 560px){
-  .header{
+
+@media (max-width: 956px) {
+
+  .hero__content {
+    max-width: 400px;
+    border: none;
+  }
+
+  .education {
+    margin-right: 0;
+  }
+
+  .contacts__content {
+    width: 400px;
+  }
+
+  .contacts__form {
+    flex-direction: column;
+  }
+
+  .form__field {
+    display: block;
+    width: 300px;
+    margin-right: 0;
+  }
+
+  .contacts__textarea {
+    width: 300px;
+  }
+
+  .contacts__button {
+    display: block;
+  }
+}
+
+@media (max-width: 560px) {
+  .hero {
     height: 640px;
-    background-image: url("../test/Background320.png");
+    background-image: url("../jpg_png/Background320.png");
     background-size: cover;
-      }
-  .header__container{
+  }
+
+  .hero__container {
     height: 640px;
   }
-  .header__content {
+
+  .hero__content {
     max-width: 300px;
   }
-  .header__social{
+
+  .hero__social {
     display: none;
   }
+
+  .benefit__container {
+    height: 1039px;
+  }
+
+  .education,
+  .experience {
+    width: 292px;
+  }
+
+  .education__title,
+  .experience__title {
+    width: 200px;
+    text-align: end;
+  }
+
+  .education__title::before,
+  .experience__title::before {
+    left: -10px;
+  }
+
+  .benefit__subtitle {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .item__text {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .item__subtitle {
+    width: 194px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .item__icon {
+    margin-left: 40px;
+  }
+
+  .item__description {
+    width: 250px;
+    margin-left: 35px;
+
+  }
+
+  .education::before,
+  .experience::before {
+    height: 398px;
+    left: -3px;
+  }
+
+  .education__item,
+  .experience__item {
+    width: 292px;
+    margin-bottom: 16px;
+  }
+
+  .contacts__img {
+    display: none;
+  }
+
+  .contacts__content,.form__input {
+    width: 300px;
+    
+  }
+  .contacts__content{
+    padding-left: 0;
+  }
+.contacts__textarea{
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.menu{
+  overflow: auto;
+    height: 500px;
+}
+
 }
