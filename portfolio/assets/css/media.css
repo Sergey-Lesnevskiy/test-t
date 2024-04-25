@@ -95,7 +95,6 @@
 
   .form__label.form__label-checkbox {
     width: 193px;
-
     left: 75px;
 
   }
@@ -192,7 +191,6 @@
   .item__description {
     width: 250px;
     margin-left: 35px;
-    /* margin-bottom: 55px; */
   }
 
   .education__list {
@@ -263,6 +261,4 @@
   .contacts__button {
     margin-left: 41px;
   }
-
-
 }

@@ -55,7 +55,6 @@
 }
 
 .menu.active__menu {
-  
   left: 0px;
   visibility: visible;
 }
@@ -134,24 +133,24 @@
   visibility: visible;
 }
 
-
 .social__list{
   display: flex;
   justify-content: center;
 }
+
 .social__item:not(:last-child){
 margin-right: 10px;
 }
+
 .social__link-img{
   width: 20px;
   height: 20px;
   transform: rotate(90deg);
 }
+
 .social__link-facebook{
   transform: rotate(0deg);
 }
-
-
 
 .lock{
   overflow: hidden;

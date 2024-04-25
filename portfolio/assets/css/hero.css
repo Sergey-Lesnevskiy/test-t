@@ -4,7 +4,6 @@
   background-image: url('../jpg_png/Background.jpg');
   background-repeat: no-repeat;
   background-position: center center;
-  /* margin-bottom: 100px; */
 }
 
 .hero__container {
@@ -68,7 +67,6 @@
   margin-right: 7.5px;
 }
 
-
 .hero__social {
   position: absolute;
   top: 228px;
@@ -98,6 +96,7 @@
 .social--vertical>.social__list{
   flex-direction: column;
 }
+
 .social--vertical>.social__list>.social__item{
   transform: rotate(-90deg);
   margin-bottom: 10px;

@@ -3,9 +3,9 @@
   height: 600px;
 }
 
-.contacts__wrapper{
+.contacts__wrapper {
   max-width: 1140px;
-  height:  781px;
+  height: 781px;
   margin: 0 auto;
   border: 2px solid #000000;
   border-top: none;
@@ -29,7 +29,7 @@
 
 .contacts__content {
   padding-left: 10px;
-  padding-top:8px;
+  padding-top: 8px;
   width: 585px;
 }
 
@@ -41,7 +41,8 @@
   margin-bottom: 6px;
   position: relative;
 }
-.contacts__title::before{
+
+.contacts__title::before {
   content: "";
   position: absolute;
   width: 36px;
@@ -59,7 +60,8 @@
   margin-bottom: 22px;
   position: relative;
 }
-.contacts__subtitle:after{
+
+.contacts__subtitle:after {
   content: "";
   position: absolute;
   width: 60px;
@@ -85,22 +87,24 @@
   width: 30px;
   height: 30px;
 }
-.social__link:not(:last-child){
+
+.social__link:not(:last-child) {
   margin-right: 23px;
 }
-.social__link:not(:first-child){
-  transform:rotate(-90deg); ;
+
+.social__link:not(:first-child) {
+  transform: rotate(-90deg);
+  ;
 }
 
 .social__link-instagram,
 .social__link-github {
   transform: rotate(90deg);
 }
-.contacts__section-desc{
+
+.contacts__section-desc {
   margin-bottom: 32px;
-
 }
-
 
 .contacts__form {
   max-width: 585px;
@@ -111,17 +115,21 @@
 
 .form__field {
   position: relative;
- 
+
 }
-.form__field:first-child{
+
+.form__field:first-child {
   margin-right: 15px;
 }
-.form__field{
+
+.form__field {
   margin-bottom: 28px;
 }
-.form__field:last-child{
-  margin-bottom:26px;
+
+.form__field:last-child {
+  margin-bottom: 26px;
 }
+
 .form__input {
   position: relative;
   width: 280px;
@@ -133,7 +141,6 @@
   font-size: 12px;
   text-align: left;
 }
-
 
 .form__label {
   position: absolute;
@@ -148,28 +155,29 @@
   z-index: 3;
 }
 
-.form__label-textarea{
+.form__label-textarea {
   width: 116px;
-
- 
 }
+
 .contacts__textarea {
   padding: 10px;
   width: 584px;
   height: 190px;
 }
-.contacts__button{
-width: 219px;
+
+.contacts__button {
+  width: 219px;
 }
 
-.red{
+.red {
   border-color: red;
 }
-.red-label{
-  /* border-color: red; */
+
+.red-label {
   color: red;
- width: 186px;
+  width: 186px;
 }
-.field__checkbox{
+
+.field__checkbox {
   display: none;
 }
