@@ -37,63 +37,79 @@ function removeBurgerMenu() {
 
 FORM_BUTTON.addEventListener("click", (e) => {
   e.preventDefault();
- const email = validationEmail();
- const name = validationName();
- const sms = validationSms();
-console.log(email);
-console.log(sms);
-console.log(name);
+  const email = validationEmail();
+  const name = validationName();
+  const sms = validationSms();
+  if (sms && name && email) {
+    fetch("https://jsonplaceholder.typicode.com/users/", {
+      method: "POST",
+      body: JSON.stringify({
+        id: 1,
+        name: name,
+        username: sms,
+        email: email,
+      }),
+      headers: {
+        "Content-type": "application/json; charset=UTF-8",
+      },
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        alert(`Вы отправили следующие данные:\n имя: ${data.name}\n email: ${data.email} \n cообщение: ${data.username}\n Я обязательно отвечу вам!`)});
+  } else {
+    alert(`Введите корректные данные`);
+  }
+  INPUT_MAIL.value = "";
+  TEXT_SMS.value = "";
+  INPUT_NAME.value = "";
+
 });
-  INPUT_MAIL.addEventListener("focus", () => {
-    INPUT_MAIL.classList.remove("red");
-    EMAIL_LABEL.textContent = "Ваша почта";
-    EMAIL_LABEL.classList.remove("red-label");
-  });
-  INPUT_NAME.addEventListener("focus", () => {
-    INPUT_NAME.classList.remove("red");
-    NAME_LABEL.textContent = "Ваша имя";
-    NAME_LABEL.classList.remove("red-label");
-  });
-  TEXT_SMS.addEventListener("focus", () => {
-    TEXT_SMS.classList.remove("red");
-    SMS_LABEL.textContent = "Ваша сообщение";
-    SMS_LABEL.classList.remove("red-label");
-  });
+INPUT_MAIL.addEventListener("focus", () => {
+  INPUT_MAIL.classList.remove("red");
+  EMAIL_LABEL.textContent = "Ваша почта";
+  EMAIL_LABEL.classList.remove("red-label");
+});
+INPUT_NAME.addEventListener("focus", () => {
+  INPUT_NAME.classList.remove("red");
+  NAME_LABEL.textContent = "Ваша имя";
+  NAME_LABEL.classList.remove("red-label");
+});
+TEXT_SMS.addEventListener("focus", () => {
+  TEXT_SMS.classList.remove("red");
+  SMS_LABEL.textContent = "Ваша сообщение";
+  SMS_LABEL.classList.remove("red-label");
+});
 
-  function validationEmail () { 
-    if (handlerValidateEmail(INPUT_MAIL.value)) {
-      return INPUT_MAIL.value;
-    } else {
-      console.log("here");
-      INPUT_MAIL.classList.add("red");
-      EMAIL_LABEL.textContent = "Вы ввели неверные данные";
-      EMAIL_LABEL.classList.add("red-label");
-      return false;
-    }
+function validationEmail() {
+  if (handlerValidateEmail(INPUT_MAIL.value)) {
+    return INPUT_MAIL.value;
+  } else {
+    INPUT_MAIL.classList.add("red");
+    EMAIL_LABEL.textContent = "Вы ввели неверные данные";
+    EMAIL_LABEL.classList.add("red-label");
+    return false;
   }
-  function validationName () { 
-    if (handlerValidateName(INPUT_NAME.value)) {
-      return INPUT_NAME.value;
-    } else {
-      console.log("here1");
-      INPUT_NAME.classList.add("red");
-      NAME_LABEL.textContent = "Вы ввели неверные данные";
-      NAME_LABEL.classList.add("red-label");
-      return false;
-    }
+}
+function validationName() {
+  if (handlerValidateName(INPUT_NAME.value)) {
+    return INPUT_NAME.value;
+  } else {
+    INPUT_NAME.classList.add("red");
+    NAME_LABEL.textContent = "Вы ввели неверные данные";
+    NAME_LABEL.classList.add("red-label");
+    return false;
   }
-  function validationSms () { 
-    if (TEXT_SMS.value.trim()) {
-      return TEXT_SMS.value;
-    } else {
-      console.log("here2");
-      TEXT_SMS.classList.add("red");
-      SMS_LABEL.textContent = "Вы ввели неверные данные";
-      SMS_LABEL.classList.add("red-label");
-      return false;
-    }
+}
+function validationSms() {
+  if (TEXT_SMS.value.trim()) {
+    return TEXT_SMS.value.trim();
+  } else {
+    TEXT_SMS.classList.add("red");
+    SMS_LABEL.textContent = "Вы ввели неверные данные";
+    SMS_LABEL.classList.add("red-label");
+    return false;
   }
-
+}
 
 const handlerValidateEmail = (email) => {
   return email.match(
@@ -101,7 +117,5 @@ const handlerValidateEmail = (email) => {
   );
 };
 const handlerValidateName = (name) => {
-  return name.match(
-    /[^a-zA-Z]\D+/g
-  );
+  return name.match(/[^a-zA-Z]\D+/g);
 };
