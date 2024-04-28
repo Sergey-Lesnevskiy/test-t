@@ -1,0 +1,58 @@
+@media (max-width: 1300px) {
+  .hero__content {
+    max-width: 800px;
+  }
+
+  .hero__desc {
+    font-size: 26px;
+    line-height: 39px;
+    width: 300px;
+    margin-bottom: 32px;
+    letter-spacing: 1.3px;
+  }
+
+  .aboutMe__container{
+    max-width: 800px;
+    flex-direction: column;
+    height: 1748px;
+    height: 1248px;
+    align-items: center;
+  }
+  .aboutMe__img{
+    margin: 0;
+margin-bottom: 40px;
+  }
+  .benefit {
+    height: 1039px;
+  }
+
+  .benefit__content {
+    max-width: 800px;
+    height: 1039px;
+  }
+
+  .benefit__grid {
+    flex-direction: column;
+  }
+
+  .experience {
+    padding: 0;
+  }
+
+  .experience::before {
+    left: -44px;
+  }
+
+  .contacts__container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contacts__wrapper {
+    max-width: 800px;
+    height: 1439px;
+  }
+}
+
+
+

@@ -27,12 +27,12 @@
 
     <nav class="menu__nav">
       <ul class="menu__list">
-        <li class="menu__item"><a href="">ПРО МЕНЯ</a></li>
-        <li class="menu__item"><a href="">МОЙ ОПЫТ</a></li>
-        <li class="menu__item"><a href="">МОИ НАВЫКИ</a></li>
-        <li class="menu__item"><a href="">МОИ РАБОТЫ</a></li>
-        <li class="menu__item"><a href="">ПРАЙС-ЛИСТ</a></li>
-        <li class="menu__item"><a href="">КОНТАКТЫ</a></li>
+        <li class="menu__item"><a href="#aboutMe">ПРО МЕНЯ</a></li>
+        <li class="menu__item"><a href="#benefit">МОЙ ОПЫТ</a></li>
+        <li class="menu__item"><a href="/">МОИ НАВЫКИ</a></li>
+        <li class="menu__item"><a href="/">МОИ РАБОТЫ</a></li>
+        <li class="menu__item"><a href="/">ПРАЙС-ЛИСТ</a></li>
+        <li class="menu__item"><a href="#contacts">КОНТАКТЫ</a></li>
       </ul>
     </nav>
     <div class="menu__socials social">
@@ -85,14 +85,61 @@
           <h1 class="hero__title">Меня зовут Александра Смит</h1>
           <p class="hero__desc">Я web-разработчик из города Москва</p>
           <div class="hero__buttons">
-
-            <button class="button button--portfolio active">Портфолио</button>
-            <button class="button button--portfolio">Про меня</button>
+            <a class="button button--portfolio active" href="#contacts">Портфолио</a>
+            <a class="button button--portfolio" href="#aboutMe">Про меня</a>
           </div>
         </div>
       </div>
     </section>
-    <section class="benefit">
+    <section class="aboutMe" id="aboutMe">
+      <div class="aboutMe__container">
+        <div class="aboutMe__img">
+          <img src="./assets/jpg_png/Photo.png" alt="">
+        </div>
+        <div class="aboutMe__content">
+          <p class="aboutMe__title">Про меня</p>
+          <h2 class="aboutMe__subtitle">Меня зовут Александра</h2>
+          <p class="aboutMe__description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum
+          </p>
+          <ul class="aboutMe__list skills">
+            <li class="skill__item item">
+              <div class="item__icon"><img src="./assets/svg/web_development.svg" alt="" class="item__img"></div>
+              <div class="item__text">
+                <b class="item__title">Web-разработка</b>
+                <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua. </p>
+              </div>
+
+            </li>
+            <li class="skill__item item">
+              <div class="item__icon"><img src="./assets/svg/Mobile_dev.svg" alt="" class="item__img"></div>
+              <div class="item__text">
+                <b class="item__title">Разработка приложений</b>
+                <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua. </p>
+              </div>
+              
+            </li>
+            <li class="skill__item item">
+              <div class="item__icon"><img src="./assets/svg/Design.svg" alt="" class="item__img"></div>
+              <div class="item__text">
+                <b class="item__title">UI/UX Design</b>
+                <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua. </p>
+              </div>
+
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+    <section class="benefit" id="benefit">
       <div class="benefit__content">
         <div class="benefit__container">
           <p class="benefit__title">Опыт</p>
@@ -108,7 +155,7 @@
                   <div class="item__text">
                     <b class="item__title">МГТУ им. Н. Э. Баумана</b>
                     <p class="item__subtitle">
-                      <span>Диплом магистра | Москва (2014-2020)</span>
+                      Диплом магистра | Москва (2014-2020)
                     </p>
                   </div>
                   <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -116,15 +163,18 @@
                     adipiscing elit, sed do eiusmo. </p>
                 </li>
                 <li class="education__item item">
-
-                  <div class="item__icon"><img src="./assets/svg/Courses.svg" alt=""></div>
+                  <div class="item__icon education__item-udemy">
+                    <img src="./assets/svg/Courses.svg"  alt="">
+                  </div>
                   <div class="item__text">
                     <b class="item__title">Udemy</b>
-                    <p class="item__subtitle">Курсы по Web-разработке</p>
+                    <p class="item__subtitle">
+                      Курсы по Web-разработке
+                    </p>
                   </div>
-                  <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                  <p class="item__description item__description-unemy ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                     tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit, sed do eiusmo.</p>
+                    adipiscing elit, sed do eiusmo. </p>
                 </li>
               </ul>
             </div>
@@ -146,12 +196,12 @@
                   <div class="item__icon"><img src="./assets/svg/designer.svg" alt=""></div>
                   <div class="item__text">
                     <b class="item__title">UI/UX Designer</b>
-                    <p class="item__subtitle"><span>Squad Team | Москва (2018) </span>
+                    <p class="item__subtitle"><span>Squad Team | Москва (2018)</span>
                     </p>
                   </div>
                   <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                     tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit, sed do eiusmo.</p>
+                    adipiscing elit, sed do eiusmo. </p>
                 </li>
               </ul>
             </div>
@@ -196,11 +246,10 @@
               </div>
               <div class="form__field field__checkbox">
                 <label class="form__label form__label-checkbox" for="checkbox">Я согласен(а) с <span>
-                  политикой конфиденциальности
-                </span> </label>
+                    политикой конфиденциальности
+                  </span> </label>
                 <input class="contacts__checkbox" type="checkbox" id="checkbox" name="textarea" required>
               </div>
-
               <button class="button contacts__button active" type="submit">Отправить сообщение</button>
             </form>
           </div>

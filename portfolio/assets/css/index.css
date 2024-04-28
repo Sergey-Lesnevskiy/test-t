@@ -5,4 +5,7 @@
 @import 'hero.css';
 @import 'benefit.css';
 @import 'contacts.css';
-@import 'media.css';
+@import 'aboutMe.css';
+@import 'mediaDesktop.css';
+@import 'mediaLaptop.css';
+@import 'mediaPhone.css';

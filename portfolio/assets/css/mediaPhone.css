@@ -1,0 +1,276 @@
+@media (max-width: 560px) {
+  .hero {
+    height: 640px;
+    background-image: url("../jpg_png/Background320.png");
+    background-size: cover;
+  }
+
+  .hero__container {
+    height: 640px;
+  }
+
+  .hero__content {
+    max-width: 300px;
+  }
+
+  .hero__social {
+    display: none;
+  }
+
+  .aboutMe__container {
+    padding-top: 41px;
+    height: 1255px;
+  }
+
+  .aboutMe__img {
+    width: 301px;
+    height: 341px;
+    background-image: url(../jpg_png/AboutMe.jpg);
+  }
+
+  .aboutMe__img>img {
+    display: none;
+  }
+
+  .aboutMe__content {
+    padding-left: 9px;
+    height: 600px;
+  }
+
+  .aboutMe__title {
+    margin-bottom: 24px;
+  }
+
+  .aboutMe__subtitle {
+    margin-bottom: 35px;
+  }
+
+  .aboutMe__subtitle:after {
+    left: 2px;
+    top: 47px;
+  }
+
+  .aboutMe__description {
+    width: 92%;
+    letter-spacing: -0.1px;
+    margin-bottom: 17px;
+  }
+
+  .benefit__content {
+    border: 0;
+  }
+
+  .skill__item>.item__text>.item__title {
+    margin-left: 17px;
+  }
+
+  .skill__item>.item__text>.item__description {
+    margin-left: 17px;
+  }
+
+  .benefit__container {
+    height: 1039px;
+  }
+
+  .benefit__content {
+    padding-top: 0
+  }
+
+  .benefit__title {
+    margin-bottom: 25px;
+  }
+
+  .benefit__subtitle:after {
+    left: 96px;
+    top: 48px;
+  }
+
+  .education,
+  .experience {
+    width: 292px;
+  }
+
+  /* change */
+.item__icon {
+    width: 40px;
+    height: 36px;
+    margin-top: 0px;
+    /* padding-bottom: 43px; */
+
+      margin-left: 44px;
+      margin-right: 0;
+      margin-bottom: 0;
+    
+  }
+
+  .education__item>.item__icon>img {
+    width: 20px;
+    height: 20px;
+
+  }
+
+  .education__item>.item__text {
+    font-size: 14px;
+    line-height: 21px;
+    margin-left: 13px;
+    letter-spacing: -0.5px;
+    width: 168px;
+    margin-bottom: 5px;
+  }
+
+  .education__item>.item__icon::before {
+    top: -15px;
+  }
+
+
+  .education__item>.item__icon::after {
+    top: 3px;
+  }
+
+  .item__subtitle {
+    width: 194px;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+  }
+
+  .item__description {
+    width: 250px;
+    margin-left: 45px;
+
+  }
+
+  /* change */
+  .education__title,
+  .experience__title {
+    width: 178px;
+    text-align: end;
+  }
+
+  .experience__title {
+    margin-bottom: 40px;
+  }
+
+  .education__title::before,
+  .experience__title::before {
+    left: -6px;
+  }
+
+  .benefit__subtitle {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 55px;
+  }
+
+
+
+
+  .item__subtitle>span {
+    display: inline-block;
+    width: 194px;
+  }
+
+.education__item-udemy{
+  padding-top: 13px;
+}
+.education__item>.education__item-udemy::before{
+  top: 0px;
+
+}
+.education__item>.education__item-udemy::after{
+  top: 20px;
+
+}
+.item__description-unemy{
+  padding-top: 17px;
+}
+
+  .education__list {
+    margin-bottom: 35px;
+  }
+
+  .education::before,
+  .experience::before {
+    height: 401px;
+    left: 1px;
+  }
+  .education{
+    margin-bottom: 8px;
+  }
+
+  .education__item,
+  .experience__item {
+    width: 292px;
+    margin-bottom: 12px;
+  }
+
+  .experience__item {
+    margin-bottom: 10px;
+  }
+  .experience__item>.item__icon{
+    padding-top: 10px;
+  }
+  .experience__item>.item__icon::after{
+    top: 21px;
+  }
+  .experience__item>.item__icon::before{
+    top: 2px;
+  }
+  .experience__item>.item__icon>img{
+    margin-left: 10px;
+  }
+
+
+  .experience__item>.item__text{
+    margin-left: 10px;
+    margin-bottom: 22px;
+  }
+  .contacts__wrapper {
+    border: 0;
+  }
+
+  .contacts__title {
+    margin-bottom: 23px;
+  }
+
+  .contacts__subtitle {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 38px;
+  }
+
+  .contacts__subtitle:after {
+    left: 3px;
+    top: 50px;
+  }
+
+  .contacts__img {
+    display: none;
+  }
+
+  .contacts__content,
+  .form__input {
+    width: 300px;
+
+  }
+
+  .contacts__content {
+    padding-left: 0;
+  }
+
+  .contacts__textarea {
+    padding-top: 10px;
+    padding-left: 10px;
+    height: 142px;
+  }
+
+  .menu {
+    overflow: auto;
+    height: 500px;
+  }
+
+  .contacts__button {
+    margin-left: 41px;
+  }
+}

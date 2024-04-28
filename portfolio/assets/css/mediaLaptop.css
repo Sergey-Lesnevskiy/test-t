@@ -1,0 +1,80 @@
+@media (max-width: 956px) {
+
+  .hero__content {
+    max-width: 400px;
+    border: none;
+  }
+
+  .aboutMe__container {
+    max-width: 400px;
+    border: none;
+    height: 1580px;
+}
+.aboutMe__description {
+  width: 80%;
+}
+.aboutMe__subtitle{
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.skill__item > .item__icon{
+  margin-left: 0;
+}
+  .benefit__content {
+    border: none;
+
+  }
+
+  .education {
+    margin-right: 0;
+  }
+
+  .contacts__wrapper {
+    border: none;
+    height: 1000px;
+  }
+
+  .contacts__content {
+    width: 400px;
+  }
+
+  .contacts__form {
+    flex-direction: column;
+  }
+
+  .form__field {
+    display: block;
+    width: 300px;
+    margin-right: 0;
+  }
+
+  .contacts__textarea {
+    width: 300px;
+  }
+
+  .contacts__button {
+    display: block;
+  }
+
+  .field__checkbox {
+
+    display: block;
+    width: 180px;
+    height: 36px;
+  }
+
+  .form__label.form__label-checkbox {
+    width: 193px;
+    left: 75px;
+
+  }
+
+  .form__label>span {
+    color: blue;
+  }
+
+  .contacts__checkbox {
+    margin-left: 57px;
+  }
+}

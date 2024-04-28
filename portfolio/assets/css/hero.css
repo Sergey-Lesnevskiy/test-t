@@ -17,7 +17,8 @@
   max-width: 1140px;
   height: 800px;
   margin: 0 auto;
-  border: 2px solid #000000;
+  border: 2px solid var(--color-black);
+  /* border-right-color: var(--color-black); */
   border-bottom: none;
   padding-top: 206px;
 }
@@ -53,10 +54,13 @@
 }
 
 .button {
+  display: inline-block;
   font-size: 14px;
   line-height: 21px;
   width: 135px;
   height: 45px;
+  text-align: center;
+  padding-top: 10px;
 }
 
 .button.active {

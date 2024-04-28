@@ -14,12 +14,20 @@ const NAME_LABEL = document.querySelector(".name");
 const TEXT_SMS = document.querySelector("#textarea");
 const SMS_LABEL = document.querySelector(".form__label-textarea");
 
+const BTNS_HERO = document.querySelectorAll(".button--portfolio");
+const CONTAINER_BTN = document.querySelector(".hero__buttons");
+
+const LIST_MENU = document.querySelector(".menu__list");
+
 //menu
 BTN_BURGER.addEventListener("click", addBurgerMenu);
 
 BTN_CROSS.addEventListener("click", removeBurgerMenu);
 
 OVERLAY_CONTENT.addEventListener("click", removeBurgerMenu);
+
+LIST_MENU.addEventListener("click", removeBurgerMenu);
+
 
 function addBurgerMenu() {
   MENU.classList.add("active__menu");
@@ -136,3 +144,19 @@ let enableScroll = function () {
   document.body.style.paddingRight = "0px";
   BTN_BURGER.style.right = 28 + "px";
 };
+
+// buttons hero
+CONTAINER_BTN.addEventListener('click',(e)=>{
+  let target = e.target;
+  if (e.target.tagName === "A") {
+    highlight(target);
+  };
+})
+
+function highlight(el) {
+  BTNS_HERO.forEach(item=> {
+  item.classList.remove("active");
+  });
+  el.classList.add("active"); 
+}
+
