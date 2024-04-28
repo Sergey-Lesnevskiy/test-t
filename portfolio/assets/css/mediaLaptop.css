@@ -9,18 +9,21 @@
     max-width: 400px;
     border: none;
     height: 1580px;
-}
-.aboutMe__description {
-  width: 80%;
-}
-.aboutMe__subtitle{
-  font-size: 24px;
-  line-height: 36px;
-}
+  }
 
-.skill__item > .item__icon{
-  margin-left: 0;
-}
+  .aboutMe__description {
+    width: 80%;
+  }
+
+  .aboutMe__subtitle {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .skill__item>.item__icon {
+    margin-left: 0;
+  }
+
   .benefit__content {
     border: none;
 

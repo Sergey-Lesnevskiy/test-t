@@ -90,17 +90,10 @@
     width: 292px;
   }
 
-  /* change */
-.item__icon {
+  .item__icon {
     width: 40px;
     height: 36px;
-    margin-top: 0px;
-    /* padding-bottom: 43px; */
-
-      margin-left: 44px;
-      margin-right: 0;
-      margin-bottom: 0;
-    
+    margin: 0 0 0 44px;
   }
 
   .education__item>.item__icon>img {
@@ -141,7 +134,6 @@
 
   }
 
-  /* change */
   .education__title,
   .experience__title {
     width: 178px;
@@ -163,28 +155,28 @@
     margin-bottom: 55px;
   }
 
-
-
-
   .item__subtitle>span {
     display: inline-block;
     width: 194px;
   }
 
-.education__item-udemy{
-  padding-top: 13px;
-}
-.education__item>.education__item-udemy::before{
-  top: 0px;
+  .education__item-udemy {
+    padding-top: 13px;
+  }
 
-}
-.education__item>.education__item-udemy::after{
-  top: 20px;
+  .education__item>.education__item-udemy::before {
+    top: 0px;
 
-}
-.item__description-unemy{
-  padding-top: 17px;
-}
+  }
+
+  .education__item>.education__item-udemy::after {
+    top: 20px;
+
+  }
+
+  .item__description-unemy {
+    padding-top: 17px;
+  }
 
   .education__list {
     margin-bottom: 35px;
@@ -195,7 +187,8 @@
     height: 401px;
     left: 1px;
   }
-  .education{
+
+  .education {
     margin-bottom: 8px;
   }
 
@@ -208,24 +201,29 @@
   .experience__item {
     margin-bottom: 10px;
   }
-  .experience__item>.item__icon{
+
+  .experience__item>.item__icon {
     padding-top: 10px;
   }
-  .experience__item>.item__icon::after{
+
+  .experience__item>.item__icon::after {
     top: 21px;
   }
-  .experience__item>.item__icon::before{
+
+  .experience__item>.item__icon::before {
     top: 2px;
   }
-  .experience__item>.item__icon>img{
+
+  .experience__item>.item__icon>img {
     margin-left: 10px;
   }
 
 
-  .experience__item>.item__text{
+  .experience__item>.item__text {
     margin-left: 10px;
     margin-bottom: 22px;
   }
+
   .contacts__wrapper {
     border: 0;
   }
