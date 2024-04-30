@@ -1,0 +1,212 @@
+.skills {
+  width: 100%;
+  height: 1082px;
+}
+
+.skills__container {
+  max-width: 1140px;
+  height: 1082px;
+  margin: 0 auto;
+  border-left: 2px solid var(--color-black);
+  border-right: 2px solid var(--color-black);
+  border-bottom: none;
+  padding-top: 110px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skills__title {
+  margin-bottom: 7px;
+  position: relative;
+  font-size: 16px;
+  line-height: 24px;
+  z-index: 1;
+}
+
+.skills__title::before {
+  content: "";
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  left: 12px;
+  top: -9px;
+  background-color: var(--color-orange);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.skills__subtitle {
+  font-size: 36px;
+  line-height: 60px;
+  letter-spacing: 1.1px;
+  margin-bottom: 84px;
+  position: relative;
+}
+
+.skills__subtitle:after {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 2px;
+  left: 214px;
+  top: 80px;
+  background-color: var(--color-orange);
+  z-index: -1;
+}
+
+.skills__grid-cards {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 13px;
+  row-gap: 10px;
+  padding: 0 8px;
+  margin-bottom: 121px;
+}
+
+.card__item {
+  width: 270px;
+  height: 270px;
+  border: 1px solid var(--color-black);
+  padding: 27px;
+}
+
+.card__item:last-child {
+  padding-top: 17px;
+}
+
+.card__item:last-child>.card__img {
+  margin-bottom: 34px;
+}
+
+.card__img {
+  height: 65px;
+  display: flex;
+  justify-content: start;
+  margin-bottom: 21px;
+}
+
+.card__img-html,
+.card__img-css3 {
+  width: 45.77px;
+  height: 65px;
+}
+
+.card__img-js {
+  width: 65px;
+}
+
+.card__img-Jquery {
+  width: 161.14px;
+  height: 36.62px;
+  align-self: flex-end;
+}
+
+.card__img-react {
+  width: 71.56px;
+  height: 64.65px;
+}
+
+.card__img-node {
+  width: 103.86px;
+  height: 64.81px;
+  align-self: flex-end;
+}
+
+.card__img-mongo {
+  width: 152.82px;
+  height: 44.91px;
+  align-self: flex-end;
+}
+
+.card__title {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+.card__description {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  /* letter-spacing: 1.1px; */
+}
+
+.skills_grid-progress {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 46px;
+  row-gap: 29px;
+
+}
+
+.progress__item {
+  width: 348px;
+  height: 70px;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: space-between;
+}
+
+.progress__caption {
+  width: 350px;
+  position: relative;
+  display: inline-flex;
+  justify-content: space-between;
+  padding-left: 12px;
+  font-size: 14px;
+  letter-spacing: 0.6px;
+}
+
+.progress__caption::before {
+  content: "";
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  left: 2px;
+  top: -9px;
+  background-color: var(--color-orange);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.progress__bar {
+  height: 14px;
+  background-color: #E8E4DE;
+  border-radius: 4px;
+  position: relative;
+  z-index: -1;
+}
+
+.progress__bar::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 14px;
+  left: 0px;
+  top: 0px;
+  background-color: var(--color-orange);
+  border-radius: 4px;
+  z-index: 1;
+}
+
+.app.progress__bar::before {
+  width: 85%;
+}
+
+.data.progress__bar::before {
+  width: 90%;
+}
+
+.creativity.progress__bar::before {
+  width: 75%;
+}
+
+.design.progress__bar::before {
+  width: 90%;
+}
+
+.soft-skills.progress__bar::before {
+  width: 95%;
+}

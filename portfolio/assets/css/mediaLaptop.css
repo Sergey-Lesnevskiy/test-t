@@ -20,7 +20,7 @@
     line-height: 36px;
   }
 
-  .skill__item>.item__icon {
+  .aboutMe__skill-item>.item__icon {
     margin-left: 0;
   }
 
@@ -31,6 +31,11 @@
 
   .education {
     margin-right: 0;
+  }
+
+  .skills__container {
+    border: none;
+    padding-top: 41px;
   }
 
   .contacts__wrapper {

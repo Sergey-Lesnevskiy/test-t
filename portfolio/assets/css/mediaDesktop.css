@@ -44,6 +44,21 @@
     left: -44px;
   }
 
+  .skills {
+    height: 1732px;
+  }
+
+  .skills__container {
+    max-width: 800px;
+    height: 1732px;
+  }
+
+  .skills__grid-cards,
+  .skills_grid-progress {
+    justify-content: center;
+    padding: 0;
+  }
+
   .contacts__container {
     flex-direction: column;
     align-items: center;

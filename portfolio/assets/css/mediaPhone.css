@@ -60,11 +60,11 @@
     border: 0;
   }
 
-  .skill__item>.item__text>.item__title {
+  .aboutMe__skill-item>.item__text>.item__title {
     margin-left: 17px;
   }
 
-  .skill__item>.item__text>.item__description {
+  .aboutMe__skill-item>.item__text>.item__description {
     margin-left: 17px;
   }
 
@@ -222,6 +222,41 @@
   .experience__item>.item__text {
     margin-left: 10px;
     margin-bottom: 22px;
+  }
+
+
+  .skills {
+    height: 2835px;
+  }
+
+  .skills__title {
+    margin-bottom: 25px;
+  }
+
+  .skills__subtitle {
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    margin-bottom: 34px;
+  }
+
+  .skills__subtitle:after {
+    left: 131px;
+  }
+
+
+  .skills__grid-cards {
+    row-gap: 20px;
+    margin-bottom: 39px;
+  }
+
+  .skills_grid-progress {
+    row-gap: 40px;
+  }
+
+  .progress__item,
+  .progress__caption {
+    width: 300px;
   }
 
   .contacts__wrapper {

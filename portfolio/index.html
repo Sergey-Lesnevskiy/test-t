@@ -22,9 +22,7 @@
   </div>
 
   <aside class="menu">
-
     <span class="menu__cross"></span>
-
     <nav class="menu__nav">
       <ul class="menu__list">
         <li class="menu__item"><a href="#aboutMe">ПРО МЕНЯ</a></li>
@@ -134,8 +132,8 @@
             nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
             anim id est laborum
           </p>
-          <ul class="aboutMe__list skills">
-            <li class="skill__item item">
+          <ul class="aboutMe__list aboutMe__skills">
+            <li class="aboutMe__skill-item item">
               <div class="item__icon"><img src="./assets/svg/web_development.svg" alt="" class="item__img"></div>
               <div class="item__text">
                 <b class="item__title">Web-разработка</b>
@@ -144,7 +142,7 @@
               </div>
 
             </li>
-            <li class="skill__item item">
+            <li class="aboutMe__skill-item item">
               <div class="item__icon"><img src="./assets/svg/Mobile_dev.svg" alt="" class="item__img"></div>
               <div class="item__text">
                 <b class="item__title">Разработка приложений</b>
@@ -153,7 +151,7 @@
               </div>
 
             </li>
-            <li class="skill__item item">
+            <li class="aboutMe__skill-item item">
               <div class="item__icon"><img src="./assets/svg/Design.svg" alt="" class="item__img"></div>
               <div class="item__text">
                 <b class="item__title">UI/UX Design</b>
@@ -164,7 +162,6 @@
             </li>
           </ul>
         </div>
-
       </div>
     </section>
     <section class="benefit" id="benefit">
@@ -238,6 +235,118 @@
         </div>
       </div>
 
+    </section>
+    <section class="skills" id="skills">
+      <div class="skills__container">
+        <p class="skills__title">Навыки</p>
+        <h2 class="skills__subtitle">Что я использую в работе</h2>
+        <ul class="skills__grid-cards cards__list">
+          <li class="card__item">
+            <div class="card__img">
+              <img class="card__img-html" src="./assets/svg/html5.svg" alt="">
+            </div>
+            <b class="card__title">HTML5</b>
+            <p class="card__description">
+              Именно он создает каркас вашего сайта или приложения, а пятая версия позволит мне создавать более
+              SEO-оптимизированную структуру вашего продукта
+            </p>
+          </li>
+          <li class="card__item">
+            <div class="card__img">
+              <img class="card__img-css3" src="./assets/svg/css3.svg" alt="">
+            </div>
+            <b class="card__title">CSS3</b>
+            <p class="card__description">
+              Этот язык стилей позволяет мне создавать абсолютно любой внешний вид вашего сайта или приложения. Все ограничивается только вашей фантазией!
+            </p>
+          </li>
+          <li class="card__item">
+            <div class="card__img">
+              <img class="card__img-js" src="./assets/svg/JS.svg" alt="">
+            </div>
+            <b class="card__title">Java Script</b>
+            <p class="card__description">
+              Этот язык программирования позволяет оживить все что угодно: слайдеры, окна, подсказки, вкладки, получение данных от сервера и многое другое
+            </p>
+          </li>
+          <li class="card__item">
+            <div class="card__img">
+              <img class="card__img-Jquery" src="./assets/svg/Jquery.svg" alt="">
+            </div>
+            <b class="card__title">Jquery</b>
+            <p class="card__description">
+              Библиотека Jquery позволит ускорить разработку. Без необходимости интегрировать в проект мы её не будем, но навык работы с ней присутствует
+            </p>
+          </li>
+          <li class="card__item">
+            <div class="card__img">
+              <img class="card__img-react" src="./assets/svg/React.svg" alt="">
+            </div>
+            <b class="card__title">React</b>
+            <p class="card__description">
+              Эта библиотека позволяет создавать web-приложения. Мы можем создать максимально интерактивный продукт именно под ваши цели
+            </p>
+          </li>
+          <li class="card__item">
+            <div class="card__img">
+              <img class="card__img-node" src="./assets/svg/Node.js.svg" alt="">
+            </div>
+            <b class="card__title">Node.js</b>
+            <p class="card__description">
+              Эта платформа позволяет создавать бэкенд для вашего продукта - “мозги”, которые будут выполнять действия, которые пользователь не видит
+            </p>
+          </li>
+          <li class="card__item">
+            <div class="card__img">
+              <img class="card__img-mongo" src="./assets/svg/Mongo.db.svg" alt="">
+            </div>
+            <b class="card__title">Mongo.db</b>
+            <p class="card__description">
+              Это нереляционная база данных, которая будет хранить данные вашего сайта или приложения
+            </p>
+          </li>
+
+        </ul>
+        <ul class="skills_grid-progress progress__list">
+          <li class="progress__item">
+            <p class="progress__caption">Создание сайтов
+              <span>100%</span>
+            </p>
+            <div class="progress__bar"></div>
+          </li>
+          <li class="progress__item">
+            <p class="progress__caption ">Создание приложений
+              <span>85%</span>
+            </p>
+            <div class="progress__bar app"></div>
+          </li>
+          <li class="progress__item">
+            <p class="progress__caption">Работа с данными
+              <span>90%</span>
+            </p>
+            <div class="progress__bar data"></div>
+          </li>
+          <li class="progress__item">
+            <p class="progress__caption">Креативность
+              <span>75%</span>
+            </p>
+            <div class="progress__bar creativity"></div>
+          </li>
+          <li class="progress__item">
+            <p class="progress__caption">Создание дизайна
+              <span>90%</span>
+            </p>
+            <div class="progress__bar design"></div>
+          </li>
+          <li class="progress__item">
+            <p class="progress__caption">Soft skills
+              <span>95%</span>
+            </p>
+            <div class="progress__bar soft-skills"></div>
+          </li>
+    
+        </ul>
+      </div>
     </section>
     <section class="contacts" id="contacts">
       <div class="contacts__wrapper">

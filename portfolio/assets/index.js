@@ -69,12 +69,13 @@ FORM_BUTTON.addEventListener("click", (e) => {
           `Вы отправили следующие данные:\n имя: ${data.name}\n email: ${data.email} \n cообщение: ${data.username}\n Я обязательно отвечу вам!`
         );
       });
+      INPUT_MAIL.value = "";
+      TEXT_SMS.value = "";
+      INPUT_NAME.value = "";
   } else {
     alert(`Введите корректные данные`);
   }
-  INPUT_MAIL.value = "";
-  TEXT_SMS.value = "";
-  INPUT_NAME.value = "";
+
 });
 INPUT_MAIL.addEventListener("focus", () => {
   INPUT_MAIL.classList.remove("red");
