@@ -59,6 +59,16 @@
     padding: 0;
   }
 
+  .portfolio__container {
+    max-width: 800px;
+    height: 1732px;
+  }
+
+  .portfolio__grid-img {
+    width: auto;
+    height: auto;
+  }
+
   .contacts__container {
     flex-direction: column;
     align-items: center;

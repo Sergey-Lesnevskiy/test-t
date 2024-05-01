@@ -32,15 +32,42 @@
   .education {
     margin-right: 0;
   }
+  .skills{
+    height: 1874px;
+  }
 
   .skills__container {
     border: none;
     padding-top: 41px;
   }
 
+  .portfolio {
+    height: 3723px;
+  }
+
+  .portfolio__container {
+    border: none;
+  }
+
+  .portfolio__grid {
+    gap: 21px;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 280px;
+  }
+
   .contacts__wrapper {
     border: none;
     height: 1000px;
+  }
+
+  .img__plans {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .img__mac {
+    grid-column: auto;
   }
 
   .contacts__content {
