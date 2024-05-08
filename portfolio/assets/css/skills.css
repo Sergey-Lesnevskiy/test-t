@@ -79,11 +79,18 @@
   margin-bottom: 34px;
 }
 
-.card__img {
+.card__img.element-animation {
   height: 65px;
   display: flex;
   justify-content: start;
   margin-bottom: 21px;
+  opacity: 0;
+}
+
+.card__img.element-animation.element-show {
+  opacity: 1;
+  transition: all 1.5s;
+  transition-delay: 0.25s;
 }
 
 .card__img-html,
@@ -128,7 +135,6 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 18px;
-  /* letter-spacing: 1.1px; */
 }
 
 .skills_grid-progress {
@@ -145,7 +151,6 @@
   padding-top: 10px;
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   justify-content: space-between;
 }
 
@@ -182,7 +187,7 @@
 .progress__bar::before {
   content: "";
   position: absolute;
-  width: 100%;
+  width: 0%;
   height: 14px;
   left: 0px;
   top: 0px;
@@ -191,22 +196,44 @@
   z-index: 1;
 }
 
-.app.progress__bar::before {
+.app.progress__bar::before,
+.data.progress__bar::before,
+.creativity.progress__bar::before,
+.design.progress__bar::before,
+.soft-skills.progress__bar::before {
+  width: 0%;
+}
+
+.site.progress__bar.element-animation.element-show::before {
+  opacity: 1;
+  transition: all 1.5s;
+  width: 100%;
+}
+.app.progress__bar.element-animation.element-show::before {
+  opacity: 1;
+  transition: all 1.5s;
   width: 85%;
 }
 
-.data.progress__bar::before {
+.data.progress__bar.element-animation.element-show::before {
+  opacity: 1;
+  transition: all 1.5s;
   width: 90%;
 }
 
-.creativity.progress__bar::before {
+.creativity.progress__bar.element-animation.element-show::before {
+  opacity: 1;
+  transition: all 1.5s;
   width: 75%;
 }
 
-.design.progress__bar::before {
+.design.progress__bar.element-animation.element-show::before {
+  opacity: 1;
+  transition: all 1.5s;
   width: 90%;
 }
-
-.soft-skills.progress__bar::before {
+.soft-skills.progress__bar.element-animation.element-show::before {
+  opacity: 1;
+  transition: all 1.5s;
   width: 95%;
 }

@@ -21,9 +21,19 @@
   margin-right: 70px;
 }
 
-.aboutMe__content {
+.aboutMe__content.element-animation {
   padding-top: 7px;
   max-width: 570px;
+  transform: translateY(100px);
+  opacity: 0;
+}
+
+
+.aboutMe__content.element-animation.element-show  {
+  opacity: 1;
+  transition: all 1.5s;
+  transform: translateY(0%);
+  transition-delay:0.25s ;
 }
 
 .aboutMe__title {

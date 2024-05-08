@@ -14,7 +14,7 @@
   padding-top: 100px;
 }
 
-.benefit__container {
+.benefit__container.element-animation {
   position: relative;
   max-width: 986px;
   height: 559px;
@@ -22,9 +22,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  opacity: 0;
 }
 
-
+.benefit__container.element-animation.element-show  {
+  opacity: 1;
+  transition: all 1.5s;
+  transition-delay:0.25s ;
+}
 
 .benefit__title {
   margin-bottom: 7px;
