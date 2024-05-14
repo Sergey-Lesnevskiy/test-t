@@ -279,9 +279,13 @@
     margin-bottom: 55px;
   }
 
-  .portfolio__grid-img {
+  .portfolio__grid-img.element-animation {
     width: 280px;
     height: 280px;
+  }
+
+  .img__plans.element-animation {
+    transform: translateY(100px);
   }
 
   .portfolio__subtitle:after {
@@ -289,7 +293,7 @@
     top: 47px;
   }
 
-  .contacts__wrapper {
+  .contacts__container {
     border: 0;
   }
 

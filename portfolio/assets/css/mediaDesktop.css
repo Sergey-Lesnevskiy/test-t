@@ -72,10 +72,9 @@
   .contacts__container {
     flex-direction: column;
     align-items: center;
-  }
-
-  .contacts__wrapper {
     max-width: 800px;
     height: 1439px;
   }
+
+
 }

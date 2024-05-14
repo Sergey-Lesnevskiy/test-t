@@ -51,27 +51,31 @@
 
   .portfolio__grid {
     gap: 21px;
-
     grid-template-columns: 1fr;
     grid-template-rows: 280px;
   }
 
-  .contacts__wrapper {
+  .contacts__container {
     border: none;
     height: 1000px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
-  .img__plans {
+  .img__plans.element-animation {
     grid-column: auto;
     grid-row: auto;
   }
 
-  .img__mac {
+  .img__mac.element-animation {
     grid-column: auto;
   }
 
   .contacts__content {
     width: 400px;
+    border: none;
+    height: 1000px;
+
   }
 
   .contacts__form {
